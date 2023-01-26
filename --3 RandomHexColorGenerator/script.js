@@ -40,21 +40,17 @@ function changeColor() {
 }
 
 function newColorFind() {
-//  first method
- 
+//  first method 
   // for (let x = 0; x < 6; x++) {
   //   let index = Math.floor(Math.random() * 16);
   //   let value = arrayOfColorFunctions[index];
-
   //   randomColorString += value;
   //   }
 
   // second method
-
-  color = Number(Math.floor(Math.random()*9999999)).toString(16).substring(0, 7);
+  color = Number(Math.floor(Math.random()*9999999))
+          .toString(16)
+          .substring(0, 7);
   randomColorString += color;
+  return;
 }
-
-// rand color on load page
-
-// changeColor();
