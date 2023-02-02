@@ -1,21 +1,21 @@
-// DOM queries
+const coupon = document.querySelector('#coupon-code');
+const button = document.querySelector('.btn');
 
-const word = document.querySelector("input"),
-  button = document.querySelector("button"),
-  result = document.querySelector("h1");
 
-// event listeners
+// copy text to clipboard 
+// change text of button to copied!
 
-button.addEventListener("click", howManyVowels);
+button.addEventListener('click', copyCode);
 
-/**
- * Output how many vowels in input word or sentence
- * @return display count in h1 element
- */
+function copyCode (e) {
+  e.preventDefault();
+  
+  navigator.clipboard.writeText(coupon.value)
+  .then(() => {
+    button.innerHTML = "Copied!!!";
+    setTimeout(() => {
+      button.innerHTML = "Copy";
+    }, 3000);
 
-function howManyVowels(e) {
-  let count = word.value.match(/[aeiouAEIOU]/g) ? word.value.match(/[aeiouAEIOU]/g).length : 0;
-
-  result.innerHTML = word.value.toUpperCase() + " have " + count + " vowels";
-
+  });  
 }
