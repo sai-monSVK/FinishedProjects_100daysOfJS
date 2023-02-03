@@ -80,9 +80,10 @@ function makeActive(el) {
 function copyToClipboard(el) {
   el.preventDefault();
   let result = this.parentElement.firstElementChild.value;
-  navigator.clipboard.writeText(result);
-  alert("Link has been copied to clipboard!");
-  return;
+  navigator.clipboard.writeText(result).then(()=>{
+    alert("Link has been copied to clipboard!");
+    return;
+  })
 }
 
 function generateLink() {
