@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8.Google Drive Link Dowloader App / 100 days of JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c7175740f7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center wrapper">
+        <!-- Instruction Section -->
+        <div class="col-xl-3 instructions">
+          <h3>Instructions</h3>
+          <p>Follow the instructions bellow to get your Google Drive file link</p>
+          <hr>
+          <ol type="1">
+            <li>
+              <p>Open <a href="https://drive.google.com">Google Drive</a></p>
+            </li>
+            <li>
+              <p>Right click on a file</p>
+            </li>
+            <li>
+              <p>Select "Get link" and click "Copy link"</p>
+            </li>
+            <li>
+              <p>Paste "Generate Direct Link" button</p>
+            </li>
+          </ol>
+        </div>
+        <!-- Main Content section -->
+        <div class="col-xl-7 container app-section">
+
+          <div class="col-9 container app-container">
+            <h3>Google Drive Download Link Generator</h3>
+
+            <!-- Navigation start -->
+            <div class="row justify-content-center align-items-center">
+              <div class="col link-selector">
+                <ul class="nav nav-tabs justify-content-center">
+                  <li class="nav-item"><a href="#generate-tab" class="nav-link active"><i
+                        class="fa-solid fa-share-from-square"></i>Paste Link</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#audio-tab"><i class="fa-solid fa-headphones"></i>Embed
+                      Audio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#video-tab"><i class="fa-solid fa-image"></i>Embed
+                      Video/Docs</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Navigation end -->
+
+            <!-- paste link tab start -->
+            <div class="container tab link-tab">
+              <!-- logo row -->
+              <div class="row justify-content-center align-items-center">
+                <div class="logo col-12"><i class="fa-solid fa-download"></i></div>
+                <div class="col-12">
+                  <h4>Google Drive Link</h4>
+                </div>
+                <div class="col-12">Paste your Google Drive File link below</div>
+              </div>
+              <!-- link, button and result section -->
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 input-group">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-text" id="inputGroup-sizing-lg"><i class="fa-solid fa-link"></i></span>
+                    <input type="text" id="gdlink" class="form-control" aria-label="copy googe drive link here"
+                      aria-describedby="inputGroup-sizing-lg" value="">
+                  </div>
+                </div>
+                <div class="col-12 generate">
+                  <button class="btn btn-primary btn-lg">Generate Direct Download Link</button>
+                  <h4>Direct Download Link</h4>
+                </div>
+                <div class="col-12 input-group">
+                  <textarea name="" id="result-direct" cols="30" rows="3" class="form-control" readonly></textarea>
+                  <button class="btn btn-outline-primary" type="button" id="copy"><i class="fa-solid fa-copy"></i>
+                    Copy</button>
+                </div>
+              </div>
+            </div>
+            <!-- paste link tab end -->
+
+            <!-- audio tab start -->
+            <div class="container tab audio-tab d-none">
+              <!-- logo row -->
+              <div class="row justify-content-center align-items-center">
+                <div class="logo col-12"><i class="fa-solid fa-headphones"></i></div>
+                <div class="col-12">
+                  <h4>Audio Embed Link</h4>
+                </div>
+                <div class="col-12">If your link was an Audio file, use the code snippet to embed it on a web page.
+                </div>
+              </div>
+              <!-- link, button and result section -->
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                  <h4>Direct Download Link</h4>
+                </div>
+                <div class="col-12 input-group">
+                  <textarea name="" id="result-audio" cols="30" rows="3" class="form-control" readonly></textarea>
+                  <button class="btn btn-outline-primary" type="button" id="copy2"><i class="fa-solid fa-copy"></i>
+                    Copy</button>
+                </div>
+              </div>
+            </div>
+            <!-- audio tab end -->
+
+            <!-- video tab start -->
+            <div class="container tab video-tab d-none">
+              <!-- logo row -->
+              <div class="row justify-content-center align-items-center">
+                <div class="logo col-12"><i class="fa-solid fa-image"></i></div>
+                <div class="col-12">
+                  <h4>Video/Docs Embed Link</h4>
+                </div>
+                <div class="col-12">If your link was an Video or Document file, use the code snippet to embed it on a
+                  web page.</div>
+              </div>
+              <!-- link, button and result section -->
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                  <h4>Direct Download Link</h4>
+                </div>
+                <div class="col-12 input-group">
+                  <textarea name="" id="result-video" cols="30" rows="3" class="form-control" readonly></textarea>
+                  <button class="btn btn-outline-primary" type="button" id="copy3"><i class="fa-solid fa-copy"></i>
+                    Copy</button>
+                </div>
+              </div>
+            </div>
+            <!-- video tab end -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
