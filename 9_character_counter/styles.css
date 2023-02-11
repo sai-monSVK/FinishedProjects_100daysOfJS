@@ -1,0 +1,36 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background-color: rgb(19, 65, 104);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.count-number {
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    margin: .5rem auto;
+    padding: 0 1rem;
+}
+
+hr {
+    color: white;
+    width: 70%;
+}
