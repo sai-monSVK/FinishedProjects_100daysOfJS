@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>11.Quiz App / 100 days of JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c7175740f7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container-sm quiz-box">
+    <div class="row justify-content-center align-items-center g-2">
+      <div class="col quiz-title"><h1>JavaScript Quiz App</h1></div>
+    </div>
+
+    <div class="row justify-content-center align-items-center progress-row">
+      <div class="col progress-col">
+        <p>Question 
+          <span id="current-question">1</span>
+           of 
+          <span id="total-questions">5</span>
+        </p>
+          <span id="timer">TIME: 10:00</span>
+      </div>
+      
+    </div>
+    <hr>
+    <div class="row justify-content-center align-items-center g-2 question-row">
+      <div class="col">
+        <h4 id="question">What is something?</h4>
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center align-items-center g-2">
+      <div class="col possibilities">
+        <button id="answer-0">A.</button>
+        <button id="answer-1">B.</button>
+        <button id="answer-3">C.</button>
+        <button id="answer-4">D.</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center align-items-center g-2">
+      <div class="col">
+        <p class="signature">100 days of JS project</p> 
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

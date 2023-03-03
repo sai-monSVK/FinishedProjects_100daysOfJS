@@ -1,0 +1,81 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightcyan;
+    color: white;
+}
+
+.quiz-box {
+    background-color: whitesmoke;
+    padding: 2rem;
+    border: 1px solid purple;
+    border-radius: 2.5%;
+    color: #000;
+}
+.quiz-title {
+    background-color: purple;
+    border-radius: 5px;
+    padding: .3rem 0;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    text-shadow: blueviolet 1px 1px;
+}
+
+.progress-col {
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+    font-weight: 600;
+}
+
+.progress-col p {
+    margin-bottom: 0;
+    
+}
+
+#timer {
+    height: fit-content;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    padding: 0 2px;
+}
+
+hr {
+    margin: .5rem 0;
+}
+
+#question {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: orangered;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.possibilities {
+    margin-bottom: 1.5rem;
+}
+
+.possibilities button {
+    width: 100%;
+    border: 1px solid purple;
+    margin: .25rem;
+    padding: 2px 10px;
+    border-radius: 5px;
+    text-align: start;
+}
+
+.signature {
+    font-size: .6rem;
+    font-weight: bold;
+    height: fit-content;
+    margin-bottom: 0;
+}
