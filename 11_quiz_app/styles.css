@@ -79,3 +79,16 @@ hr {
     height: fit-content;
     margin-bottom: 0;
 }
+
+#answer-0::before {
+    content: "A: ";
+}
+#answer-1::before {
+    content: "B: ";
+}
+#answer-2::before{
+    content: "C: ";
+}
+#answer-3::before {
+    content: "D: ";
+}
