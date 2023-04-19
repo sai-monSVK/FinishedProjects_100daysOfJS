@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>15. Weather App / 100 days of JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c7175740f7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container app">
+    <!-- Search city section -->
+    <section class="location">
+      <div class="row justify-content-center align-items-center">
+        <div class="col">
+          <h1>Weather App</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-10">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control search" placeholder="Search by city name"
+              aria-label="Search by city name">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+          <div class="form-text" id="error">Please enter a valid city</div>
+        </div>
+      </div>
+    </section>
+    <!-- Visualise weather for inputed city section -->
+    <section class="weather">
+      <div class="row justify-content-center align-items-center">
+        <div class="col icon">
+          <img src="" alt="" class="weather-icon">
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col city-info">
+          <p id="city-name"></p>
+          <p id="date"></p>
+          <hr>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col actual-weather">
+          <div class="temp"></div>
+          <div class="weather-current"></div>
+          <div class="temp-range"></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
