@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 30%;
+}
+
+#glob-search {
+    width: 60%;
+    padding: 13px;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 2px 2px 5px greenyellow ;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    background-color: white;
+}
+
+#glob-search::placeholder {
+    color: black;
+    text-transform: capitalize;
+}
+
+#glob-search:focus {
+    outline: none;
+    background-color: lightgreen;
+}
+
+#list {
+    margin-left: 18%;
+    margin-right: 18%;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: start;
+    list-style: none;
+    background-color: white;
+    font-style: italic;
+    border-radius: 18px;
+    box-shadow: 2px 2px 5px greenyellow;
+    overflow: hidden;
+}
+
+#list li {
+    padding-top: 2.5px;
+    padding-left: 10px;
+    margin: 0;
+    border-bottom: 1px solid darkgray;
+
+}
+
+#list li:first-child {
+    padding-top: 2.5px;
+}
+
+#list li:last-child {
+    padding-bottom: 2.5px;
+    border-bottom: none;
+}
+
+#list li:hover {
+    background-color: greenyellow;
+}
+
