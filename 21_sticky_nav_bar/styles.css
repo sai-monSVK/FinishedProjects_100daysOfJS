@@ -1,0 +1,107 @@
+html {
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 650px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: orange;
+}
+
+header {
+    height: 100vh;
+    height: 100dvh;
+    margin: 0;
+    background-image: url("./assets/img/ryoji-iwata-IBaVuZsJJTo-unsplash.jpg");
+    background-size: cover;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+
+}
+
+.transparent {
+    background-color: transparent;  
+    transition: all 0.5s;
+    color: orange;
+}
+
+#logo {
+    float: left;
+    color: orange;
+    font-size: 2rem;
+    padding: .5rem;
+    margin-left: 1rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    float: right;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.nav li {
+    float: left;
+    display: inline;
+    margin: .5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+main {
+    margin: 5rem auto;
+    width: 95%;
+}
+
+section {
+    border: 1px solid black;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+h3 {
+    color: orange;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    margin-left: 2rem;
+    padding-top: .75rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 40%;
+    height: auto;
+    margin: 1rem;
+}
+
+p {
+    display: inline-block;
+    width: 50%;
+    margin: 0.75rem;
+    text-align: left;
+}
