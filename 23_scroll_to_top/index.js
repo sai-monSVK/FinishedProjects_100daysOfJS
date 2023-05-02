@@ -47,3 +47,10 @@ function showBtn() {
     }
 
 }
+
+scrollBtn.addEventListener('click', () => {
+    rootElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+})
