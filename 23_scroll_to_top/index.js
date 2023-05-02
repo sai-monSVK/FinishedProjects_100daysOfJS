@@ -33,7 +33,17 @@ function makeActive(){
 };
 
 
-window.addEventListener('scroll', () => {
-    const scrollBtn = document.querySelector('.scroll-to-top');
-    scrollBtn.classList.toggle('hide', window.scrollY <= 180);
-});
+const scrollBtn = document.querySelector('.scroll-to-top');
+const rootElement = document.documentElement;
+
+document.addEventListener('scroll', showBtn);
+
+function showBtn() {
+    const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+    if((rootElement.scrollTop / scrollTotal) > 0.3) {
+        scrollBtn.classList.add('show');
+    } else {
+        scrollBtn.classList.remove('show');
+    }
+
+}

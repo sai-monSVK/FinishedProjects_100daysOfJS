@@ -121,13 +121,16 @@ p {
     color: #fff;
     padding: 1rem;
     border-radius: 5px;
+    transform: translateY(10rem);
+    transition: all .3s;
 }
 
 .scroll-to-top:hover {
     background-color: #fff;
     color: orange;
+    transition: all .3s;
 }
 
-.hide {
-    display: none;
+.show{
+    transform: translateY(0);
 }
